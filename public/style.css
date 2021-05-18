@@ -1,0 +1,58 @@
+/*
+First, test this simple code just to
+check whether CSS is working:
+body {
+background-color: orange;
+}
+*/
+nav{
+background-color: #563d7c; /* Hexadecimal Color ID */
+color: #fff; /* Hexadecimal Color ID */
+padding: 30px 60px; /* top and bottom ; left and right */
+/* next 2 lines display nav elements on opposite corners */
+display: flex;
+justify-content: space-between;
+}
+
+nav ul {
+display: flex;
+/* next line means every element has the same space around them */
+justify-content: space-around;
+/* next line applies to li's, which are children of ul, check index.hbs */
+align-items: center;
+}
+
+nav li{
+list-style: none;
+}
+
+nav li a {
+color: #fff;
+/* next line removes underline from hyperlinks */
+text-decoration: none;
+font-weight: bold;
+padding: 5px 8px ; /* top and bottom ; left and right */
+}
+
+nav li a:hover {
+color: yellow;
+/* next line removes underline from hyperlinks */
+text-decoration: none;
+}
+
+/* now setting up the avatar */
+.avatar-ctn {
+background-color:orange;
+/* this sets up the background color for the profile */
+text-align: center;
+/* corrects avatar alignment */
+}
+/* fixing the avatar image */
+.avatar {
+width: 65%;
+/* this means 65% of element width */
+border-bottom: 1px solid  rgba(0,0,0,0.0.5);
+}
+
+
+
